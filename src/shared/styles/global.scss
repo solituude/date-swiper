@@ -1,0 +1,57 @@
+@use 'src/shared/styles/variables' as *;
+
+.h2 {
+  color: var(--Black-blue, #42567A);
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 24px */
+
+  width: 123px;
+  margin-top: 59px;
+  margin-left: 20px;
+}
+
+.h3 {
+  color: $Blue;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+.text {
+  color: $BlackBlue;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 145%;
+ 
+}
+
+
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+:global(.swiper-button-prev:after) {
+  content: '';
+}
+
+:global(.swiper-pagination-bullet) {
+ background: $BlackBlue !important;
+}

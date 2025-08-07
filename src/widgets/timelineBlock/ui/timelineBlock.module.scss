@@ -1,0 +1,65 @@
+@use 'src/shared/styles/variables' as *;
+
+.EventSlide {
+  display: flex;
+  flex-grow: 0.1;
+  width: 100%;
+  gap: 25px;
+
+  background: white;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.EventCard {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 114px;
+  width: fit-content;
+
+
+  &__description {
+    height: 80px;
+    width: 200px;
+  }
+
+}
+
+
+.Years {
+  &Container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  &_start {
+    color: #3877EE;
+    font-family: "PT Sans", sans-serif;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.12px;
+  }
+
+  &_end {
+    color: var(--Fuschia-80, #F178B6);
+    font-family: "PT Sans", sans-serif;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.12px;
+  }
+}
+
+:global(.swiper-pagination) {
+  position: relative;
+}
+
+
+
